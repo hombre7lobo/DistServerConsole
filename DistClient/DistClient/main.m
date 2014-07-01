@@ -2,7 +2,7 @@
 //  main.m
 //  DistClient
 //
-//  Created by elwoodb on 29.06.14.
+//  Created by Robert Scherbarth on 29.06.14.
 //  Copyright (c) 2014 Robert Scherbarth. All rights reserved.
 //
 
