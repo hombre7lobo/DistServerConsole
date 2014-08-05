@@ -15,23 +15,29 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         NSConnection *theConnection;
+        NSSocketPort *sockPort;
+        
+        //Server is the vended Object
         Server *server = [[Server alloc] init];
         
+        /*
+         * Create a new socket port for your connection.
+         */
+        sockPort = [[NSSocketPort alloc] initWithTCPPort:1234];
+        
         theConnection = [NSConnection new];
-        //[[NSNotificationCenter defaultCenter]   addObserver:server
-        //                                        selector:@selector(connectionDidDie:)
-        //                                        name:NSConnectionDidDieNotification
-        //                                        object:nil];
+        theConnection = [NSConnection connectionWithReceivePort:sockPort sendPort:sockPort];
+        
         
         [theConnection setRootObject: server];
         
-        if ([theConnection registerName:@"server"] == NO) {
+        if ([theConnection registerName:@"server" withNameServer: [NSSocketPortNameServer sharedInstance]] == NO) {
             NSLog(@"Impossible to vend this object.");
+            exit(1);
         } else {
             NSLog(@"Object vended.");
         }
         
-        //[[NSRunLoop currentRunLoop] configureAsServer];
         [[NSRunLoop currentRunLoop] run];
         
         
