@@ -17,8 +17,13 @@ int main(int argc, const char * argv[])
         NSConnection *theConnection;
         id server;
         
-        theConnection = [NSConnection connectionWithRegisteredName:@"server" host:nil];
-        // retain??? Self???
+        NSSocketPort *sockPort = [[NSSocketPort alloc]  initRemoteWithTCPPort: 1234
+                                                        host: @"pip09.inf.fh-koeln.de"];
+        
+        theConnection = [NSConnection  connectionWithReceivePort: nil
+                                       sendPort: sockPort];
+        
+        
         server = [[theConnection rootProxy] self];
         
 
@@ -28,8 +33,6 @@ int main(int argc, const char * argv[])
         [server message];
         NSLog(@"Work finished.");
         [server removeClient];
-        
-
         
     }
     return 0;

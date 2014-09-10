@@ -17,7 +17,6 @@ int main(int argc, const char * argv[])
         NSConnection *theConnection;
         NSSocketPort *sockPort;
         
-        //Server is the vended Object
         Server *server = [[Server alloc] init];
         
         /*
@@ -40,6 +39,13 @@ int main(int argc, const char * argv[])
         
         [[NSRunLoop currentRunLoop] run];
         
+        NSHost *host;
+        
+        host = [NSHost currentHost];
+        [host name];
+        
+        NSString *localHostname = (NSString *) host;
+        NSLog(localHostname);
         
         
     }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6EB8735-7255-4CB1-AADF-7F087BA67CCB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DistClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3DF4572B-8F47-45A7-AF29-F808C972B9FA</key>
+		<string>https://github.com/hombre7lobo/DistServerConsole.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DistClient/DistClient.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3DF4572B-8F47-45A7-AF29-F808C972B9FA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hombre7lobo/DistServerConsole.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3DF4572B-8F47-45A7-AF29-F808C972B9FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3DF4572B-8F47-45A7-AF29-F808C972B9FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DistServerConsole</string>
+		</dict>
+	</array>
+</dict>
+</plist>
